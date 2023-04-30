@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+.header-li {
+    @apply px-5 hover:text-indigo-800 hover:underline hover:font-semibold
+}
+
+.maintag {
+    @apply border border-indigo-700 mx-5 my-2 w-20 justify-self-center;
+}
+
+.main-exp {
+    @apply border border-indigo-500
+}
+
+
+
 /*:root {*/
 /*  --foreground-rgb: 0, 0, 0;*/
 /*  --background-start-rgb: 214, 219, 220;*/
@@ -16,12 +30,12 @@
 /*  }*/
 /*}*/
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+/*body {*/
+/*  color: rgb(var(--foreground-rgb));*/
+/*  background: linear-gradient(*/
+/*      to bottom,*/
+/*      transparent,*/
+/*      rgb(var(--background-end-rgb))*/
+/*    )*/
+/*    rgb(var(--background-start-rgb));*/
+/*}*/

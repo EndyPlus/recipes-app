@@ -1,14 +1,19 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import {Inter} from 'next/font/google'
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import MainPage from "@/components/MainPage";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({subsets: ['latin']})
 
 export default function Home() {
-  return (
-    <main>
-      <div>
-        <h1 className="text-lg text-indigo-500">RECIPES APP</h1>
-      </div>
-    </main>
-  )
+    return (
+        <div>
+            {/*Header*/}
+            <Header/>
+            {/*Main*/}
+            <MainPage />
+            {/*Footer*/}
+            <Footer/>
+        </div>
+    )
 }
