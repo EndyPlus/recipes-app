@@ -79,7 +79,62 @@ export default function MainPage() {
                             <p className="text-indigo-400">Description</p>
                         </div>
                     </div>
-
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
+                    <div className="border bg-white rounded-lg overflow-hidden">
+                        <Image src={TestImg} alt="Recipe" className="w-full h-48 object-cover"/>
+                        <div className="p-4">
+                            <h2 className="font-bold text-xl text-indigo-500 mb-2">Name</h2>
+                            <p className="text-indigo-400">Description</p>
+                        </div>
+                    </div>
                 </div>
 
 

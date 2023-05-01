@@ -3,7 +3,7 @@ export default function Footer() {
     return (
         <footer>
             {/*Footer Container*/}
-            <div className="flex bg-indigo-200 p-10 justify-evenly">
+            <div className="flex bg-indigo-200 p-10 justify-evenly border-t-2 border-indigo-900">
                 <div>
                     <ul>
                         <li><a href="#">Meals</a></li>
