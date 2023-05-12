@@ -15,3 +15,27 @@ export default function RecipeCard() {
         </div>
     )
 }
+
+
+
+// interface Recipe {
+//     id: number;
+//     title: string;
+//     image: string;
+//     tags: string[];
+// }
+//
+// export function RecipeCard({ recipe }: { recipe: Recipe }) {
+//     return (
+//         <div className="p-4 bg-white rounded-lg shadow-md">
+//             <img src={recipe.image} alt={recipe.title} className="w-full h-48 object-cover rounded-md mb-2" />
+//             <h2 className="text-lg font-bold mb-2">{recipe.title}</h2>
+//             <div className="flex flex-wrap">
+//                 {recipe.tags.map(tag => (
+//                     <span key={tag} className="bg-gray-200 text-gray-800 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">{tag}</span>
+//                 ))}
+//             </div>
+//         </div>
+//     );
+// }
+//

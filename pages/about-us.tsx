@@ -11,17 +11,16 @@ export default function AboutUsPage() {
 
             <div className="flex flex-col min-h-screen">
                 <div className="flex justify-around pt-24">
-
                     {/*Articles list*/}
                     <div className="flex p-16 mr-24 border border-indigo-900">
                         <ul>
-                            <li>
+                            <li className="font-bold text-xl py-3">
                                 <h1>sdasads</h1>
                             </li>
-                            <li>
+                            <li className="font-bold text-xl py-3">
                                 <h1>asdasdas</h1>
                             </li>
-                            <li>
+                            <li className="font-bold text-xl py-3">
                                 <h1>addsads</h1>
                             </li>
                         </ul>
