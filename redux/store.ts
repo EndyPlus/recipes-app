@@ -7,7 +7,6 @@ export const store = configureStore({
         [recipesApi.reducerPath]: recipesApi.reducer,
         [postsApi.reducerPath]: postsApi.reducer,
     },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(postsApi.middleware)
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(recipesApi.middleware)
 });
 
-// concat(recipesApi.middleware)

@@ -4,4 +4,10 @@ export interface IRecipes {
     title:string;
     image:string;
     summary:string;
+
 }
+
+export interface IRecipesResponse {
+    recipes: IRecipes[];
+}
+

@@ -1,30 +1,29 @@
-import { RecipeCard } from "@/components/RecipeCard";
-import React from "react";
-import { useGetRandomRecipesQuery } from "@/pages/api/recipesApi";
-import {useGetPostsQuery} from "@/pages/api/postsApi";
-
+import { RecipeCard } from '@/components/RecipeCard';
+import React from 'react';
+import { useGetRandomRecipesQuery } from '@/pages/api/recipesApi';
+import { IRecipes } from '@/models/IRecipes';
 
 export const RecipeList = () => {
-    // const { data: recipes, isError, isLoading } = useGetRandomRecipesQuery(12);
-    const {data: posts , isLoading, isError} = useGetPostsQuery(12);
-
+    const { data, isLoading, isError } = useGetRandomRecipesQuery(36);
+    // console.log('data:', data);
 
     if (isLoading) {
         return <div>Loading...</div>;
     }
 
     if (isError) {
-        return <div>Error occurred while fetching recipes</div>;
+        return <div>Error occurred while fetching recipes.</div>;
     }
 
+    const recipes = data?.recipes || [];
+
+    // console.log('recipes:', recipes);
+
     return (
-        <div>
-            <div className="grid grid-cols-3 m-4 justify-evenly gap-5">
-                {/* cards */}
-                {posts && posts.map((post) => (
-                    <RecipeCard key={post.id} post={post} />
-                ))}
-            </div>
+        <div className="grid grid-cols-3 m-4 justify-evenly gap-5">
+            {recipes.map((recipe: IRecipes) => (
+                <RecipeCard key={recipe.id} recipe={recipe} />
+            ))}
         </div>
     );
 };
