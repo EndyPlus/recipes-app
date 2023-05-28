@@ -2,6 +2,7 @@ import { RecipeCard } from '@/components/RecipeCard';
 import React from 'react';
 import { useGetRandomRecipesQuery } from '@/pages/api/recipesApi';
 import { IRecipes } from '@/models/IRecipes';
+import Link from "next/link";
 
 export const RecipeList = () => {
     const { data, isLoading, isError } = useGetRandomRecipesQuery(36);
@@ -22,7 +23,9 @@ export const RecipeList = () => {
     return (
         <div className="grid grid-cols-3 m-4 justify-evenly gap-5">
             {recipes.map((recipe: IRecipes) => (
-                <RecipeCard key={recipe.id} recipe={recipe} />
+                <Link key={recipe.id}  href={`/recipe/${recipe.id}`}>
+                    <RecipeCard recipe={recipe} />
+                </Link>
             ))}
         </div>
     );

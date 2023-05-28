@@ -17,7 +17,7 @@ export const RecipeCard: React.FC<RecipeCardProps> = ({recipe}) => {
                 <Image src={recipe.image} alt={recipe.title} width={1500} height={1125} className="w-full h-48 object-cover"/>
                 <div className="p-4">
                     <h2 className="font-bold text-xl text-indigo-500 mb-2 group-hover:underline">{recipe.title}</h2>
-                    <p className="text-indigo-400">{recipe.summary}</p>
+                    <p className="text-indigo-400 truncate" dangerouslySetInnerHTML={{ __html: recipe.summary }} />
                 </div>
             </div>
         </div>

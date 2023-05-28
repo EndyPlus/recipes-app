@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import {IRecipesResponse} from "@/models/IRecipes";
+import {IRecipesResponse} from "@/models/IRecipesResponse";
 
 export const recipesApi = createApi({
     reducerPath: 'recipesApi',
