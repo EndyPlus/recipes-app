@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {IRecipes} from "@/models/IRecipes";
-import React, {FC} from "react";
-import TestImage from "@/assets/recipeimg.jpg"
+import React from "react";
 
 
 interface RecipeCardProps {

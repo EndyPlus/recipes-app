@@ -1,24 +1,20 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import {IRecipes} from "@/models/IRecipes";
 import React from "react";
+import CurrentRecipe from "@/components/CurrentRecipe";
 
-interface RecipeCardProps {
-    recipe: IRecipes;
-}
- const Recipe: React.FC<RecipeCardProps> = ({recipe}) => {
-    return (
+
+export default function Recipe() {
+
+     return (
         <div>
             {/*Header*/}
             <Header />
             {/*Main*/}
-            <div className="flex flex-col min-h-screen">
-                <h1>hi</h1>
-            </div>
+            <CurrentRecipe />
             {/*Footer*/}
             <Footer />
         </div>
     )
 }
 
-export default Recipe;
