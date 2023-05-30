@@ -17,6 +17,11 @@ export const recipesApi = createApi({
                 params: {number: number},
             })
         }),
+        getRecipeInformation: builder.query<any, any>({
+            query: () => ({
+                url: `recipes/1/information`
+            })
+        })
     })
 })
 

@@ -30,3 +30,7 @@ export const RecipeList = () => {
         </div>
     );
 };
+
+
+// href={`/recipe/${recipe.id}/information`}
+// href={`/${recipe.id}/information`}

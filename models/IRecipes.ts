@@ -6,4 +6,12 @@ export interface IRecipes {
     summary:string;
 }
 
-
+export interface IRecipeInfo {
+    id:string;
+    title: string;
+    image:string;
+    extendedIngredients:[];
+    steps:[];
+    ingredients:[];
+    equipment:[];
+}
