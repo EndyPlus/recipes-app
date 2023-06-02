@@ -6,10 +6,7 @@ export interface IRecipes {
     summary:string;
 }
 
-export interface IRecipeInfo {
-    id:string;
-    title: string;
-    image:string;
+export interface IRecipeInfo extends IRecipes{
     extendedIngredients:[];
     steps:[];
     ingredients:[];

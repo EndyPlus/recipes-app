@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image"
-import {IRecipes} from "@/models/IRecipes";
+import {IRecipeInfo, IRecipes} from "@/models/IRecipes";
 import TestImg from "@/assets/recipeimg.jpg"
 
 interface CurrentRecipe {
-    recipe: IRecipes[];
+    recipe: IRecipeInfo;
 }
 
 const CurrentRecipe: React.FC<CurrentRecipe> = () => {
@@ -16,8 +16,7 @@ const CurrentRecipe: React.FC<CurrentRecipe> = () => {
                     <div className="flex flex-col items-start pl-64">
                         {/*Recipe Name and Image*/}
                         <div className="flex flex-col items-center ml-[15%] mb-10">
-                            <h1 className="font-bold uppercase text-5xl text-indigo-500 pt-10 pb-10">Coconut Rice
-                                Pudding</h1>
+                            <h1 className="font-bold uppercase text-5xl text-indigo-500 pt-10 pb-10">Title</h1>
                             <Image src={TestImg} alt={"Img"} width={500} height={500}
                                    className="object-cover p-2 border-4 border-indigo-900"/>
                             <div>

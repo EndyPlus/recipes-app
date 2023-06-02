@@ -1,5 +1,6 @@
 import { createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import {IRecipesResponse} from "@/models/IRecipesResponse";
+import {IRecipeInfoResponse, IRecipesResponse} from "@/models/IRecipesResponse";
+import {IRecipes} from "@/models/IRecipes";
 
 export const recipesApi = createApi({
     reducerPath: 'recipesApi',
@@ -17,12 +18,12 @@ export const recipesApi = createApi({
                 params: {number: number},
             })
         }),
-        getRecipeInformation: builder.query<any, any>({
-            query: () => ({
-                url: `recipes/1/information`
+        getRecipeInformation: builder.query<IRecipeInfoResponse, IRecipes>({
+            query: (recipe) => ({
+                url: `recipes/${recipe.id}/information`
             })
         })
     })
 })
 
-export const { useGetRandomRecipesQuery } = recipesApi;
+export const { useGetRandomRecipesQuery, useGetRecipeInformationQuery } = recipesApi;
