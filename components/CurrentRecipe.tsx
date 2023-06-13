@@ -1,13 +1,13 @@
+import Image from "next/image";
+import TestImg from "@/assets/recipeimg.jpg";
 import React from "react";
-import Image from "next/image"
-import {IRecipeInfo, IRecipes} from "@/models/IRecipes";
-import TestImg from "@/assets/recipeimg.jpg"
+import {IRecipeInfo} from "@/models/IRecipes";
 
-interface CurrentRecipe {
+interface CurrentRecipeProps {
     recipe: IRecipeInfo;
 }
 
-const CurrentRecipe: React.FC<CurrentRecipe> = () => {
+export const CurrentRecipe: React.FC<CurrentRecipeProps> = ({recipe}) => {
     return (
         <div className="flex flex-col min-h-screen">
             {/*Recipe*/}
@@ -142,5 +142,3 @@ const CurrentRecipe: React.FC<CurrentRecipe> = () => {
         </div>
     )
 }
-
-export default CurrentRecipe;
